@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+  }
+  
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    color: #FFF;
+    position: relative;
+    font-size: 64px;
+    z-index: -2;
+}
+
+#content__box{
+    display: inline-block;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#text__box{
+    line-height: 130%;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    display: -ms-inline-flexbox;
+    display: inline-flexbox;
+    display: -webkit-inline-flex;
+    flex-direction: column;
+}
+
+#name{
+    transform: translateX(-4px);
+    font-size: 128px;
+    font-weight: 700;
+}
+
+#bg__gif{
+    position: absolute;
+    top: 50%;
+    width: 40vw;
+    left: 20vw;
+    transform: translateY(-50%);
+    gap:1%;
+    z-index: -1;
+    transition: width 2s ease-in-out, left 2s ease-in-out;
+}
+
+#bg__gif:hover{
+    width: 45vw;
+}
+
+#social_media{
+    position: absolute;
+    right: 2%;
+    bottom: 3%;
+    display: flex;
+    list-style: none;
+}
+
+.media__item a{
+    background-position: center;
+    opacity: .5;
+    background-repeat: no-repeat;
+    display: block;
+    width: 3vw;
+    height: 5vh;
+    background-size: contain;
+    transition: opacity .3s ease-in-out, left .2s ease-in-out;
+}
+
+.media__item a:hover{
+    opacity: 1;
+}
+
+#github{
+    background-image: url("./icions/git.svg");
+}
+#vk{
+    background-image: url("./icions/vk.svg");
+}
+#telegram{
+    background-image: url("./icions/tg.svg");
+}
